@@ -1,0 +1,37 @@
+Ticket.sol 
+
+- 2 functions ( no public function )
+only derived contracts can mint 
+    1. markAsClaimed - bool change to true ( ye function internal hai to kahi na kahi call ho rha hoga) 
+        check ki kya iss bool ke check ko bypaas krke dobara ticket claim kr skta hu kya 
+    2. mint - ye bhi internal function hai to most probably ye bhi kahi na kahi call ho rha hoga . 
+        since it - most probaly , no bugs since erc inherited BUT STUDY safeMint - reentrancy in mint function 
+--------------------------------------------------------------------------------------------------------------------------------        
+LotteryToken.sol
+
+initial supply = 100 million 
+mint function can be called by anyone but has if condition . why didnt they just send the supply to owner , why function ? 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+PercentageMath.sol
+using a base for percentage as 100 percent but = 100_000 how ??
+similarly in 1% = 1000 how ??
+2 function to get percentage 
+
+NOTHING TO CHECK 
+---------------------------------------------------------------------------------------------------------
+
+RNSourceController.sol 
+
+constructor has the feature of changing the maxfailedattempts and maxrequestdelay can be decreased too 
+
+request randomNumber function - internal -> reverts if bool is false 
+slither showing block.timestamp in retry function 
+onlyOwner modifier problem ?? 
+this contract is managing the flow of randomrequests . 
+---------------------------------------------------------------------------------------------------------------------
+Refferralsystems.sol
+
+
+Registerticket function for both players and refferes 
