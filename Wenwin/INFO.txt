@@ -2,10 +2,10 @@ Ticket.sol
 
 - 2 functions ( no public function )
 only derived contracts can mint 
-    1. markAsClaimed - bool change to true ( ye function internal hai to kahi na kahi call ho rha hoga) 
-        check ki kya iss bool ke check ko bypaas krke dobara ticket claim kr skta hu kya 
-    2. mint - ye bhi internal function hai to most probably ye bhi kahi na kahi call ho rha hoga . 
-        since it - most probaly , no bugs since erc inherited BUT STUDY safeMint - reentrancy in mint function 
+    1. markAsClaimed - bool change to true (internal function ) 
+        
+    2. mint - alson internal function hai . 
+        since it - most probaly , no bugs since erc inherited  safeMint ??
 --------------------------------------------------------------------------------------------------------------------------------        
 LotteryToken.sol
 
