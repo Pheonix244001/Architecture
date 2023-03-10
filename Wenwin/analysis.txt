@@ -1,0 +1,8 @@
+1. Ticket
+2. lottery token 
+3. percentage math 
+4. source controller
+5. referral system 
+6. lottery math 
+7. lottery setup / staking 
+8. Lottery .sol 
