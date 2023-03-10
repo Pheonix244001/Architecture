@@ -1,4 +1,4 @@
-# Protocol-Architectures-
+# Architecture
 Documentation of protocol architectures that I audited 
 The documentation will contain 3 files 
 1. .xmind - A mind map of all the contract inheritances ( You can open them by intalling Xmind app )
